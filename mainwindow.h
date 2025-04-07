@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "PushButton.cpp"
 #include "QList"
 #include "QPushButton"
 #include <stdlib.h>

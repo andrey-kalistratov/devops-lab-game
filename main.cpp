@@ -21,6 +21,7 @@ Login *login_main;
 
 int main(int argc, char *argv[])
 {
+    QApplication a(argc, argv);
 
     // database connect
 
@@ -45,8 +46,6 @@ int main(int argc, char *argv[])
 
     // game scor table init
     query.exec("CREATE TABLE IF NOT EXISTS score (id SERIAL PRIMARY KEY, highest INT, score0 INT, score1 INT, score2 INT, score3 INT, score4 INT, score5 INT);");
-
-    QApplication a(argc, argv);
 
     // dosyalar eksik ise s3 den indirilir
     FILE *file;
